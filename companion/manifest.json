@@ -1,9 +1,9 @@
 {
-	"id": "green-go-intercom",
-	"name": "green-go-intercom",
+	"id": "greengo-intercom",
+	"name": "greengo-intercom",
 	"shortname": "GGO_Device",
 	"description": "Module to control Green-GO intercom devices",
-	"version": "1.0.1",
+	"version": "0.0.0",
 	"license": "MIT",
 	"repository": "git+https://github.com/bitfocus/companion-module-greengo-intercom.git",
 	"bugs": "https://github.com/bitfocus/companion-module-greengo-intercom/issues",
@@ -13,7 +13,7 @@
 			"email": "github@timotoups.de"
 		}
 	],
-	"legacyIds": ["greengo", "greengo-intercom"],
+	"legacyIds": ["greengo", "green-go-intercom"],
 	"runtime": {
 		"type": "node18",
 		"api": "nodejs-ipc",

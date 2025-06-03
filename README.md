@@ -145,7 +145,7 @@ grandMA2 (OSC_Mate)
 ```
 Plugin OSC_Mate "/ggo/cmd/channel/cue,ii,0,[chId]"
 ```
-### Stop sending cue signal (direct)
+### Stop sending cue signal (immediately)
 QLab 5
 ```
 /ggo/cmd/channel/cue 1 {chId}

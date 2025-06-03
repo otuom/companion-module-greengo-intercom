@@ -11,7 +11,7 @@ https://help.malighting.com/grandMA3/latest/?p=keyword_sendosc.html
 ### grandMA2 (OSC_Mate)
 https://www.dropbox.com/scl/fi/j2sf4egmjtg3rpf5nw63n/OSC_Mate-manual.pdf?rlkey=gfg4pdhtzrb7ybvkoq5dc0snr&dl=0
 ## Identify device
-Qlab
+QLab 5
 ```
 /ggo/cmd/identify {boolean}
 ```
@@ -19,20 +19,9 @@ grandMA3
 ```
 SendOSC [ID] /ggo/cmd/identify,i,[boolean]
 ```
-## Talk
-### Enable
-QLab 5
+grandMA2 (OSC_Mate)
 ```
-/ggo/cmd/channel/talk 2 {chId}
-```
-grandMA3
-```
-SendOSC [ID] /ggo/cmd/channel/talk,ii,2,[chId]
-```
-### Disable
-QLab 5
-```
-/ggo/cmd/channel/talk 0 {chId}
+Plugin OSC_Mate "/ggo/cmd/identify,i,[boolean]"
 ```
 ## Call
 ### Enable call
@@ -46,7 +35,7 @@ SendOSC [ID] /ggo/cmd/channel/call,ii,1,[chId]
 ```
 grandMA2 (OSC_Mate)
 ```
-Plugin OSC_Mate "/ggo/cmd/channel/call,ii,1,1"
+Plugin OSC_Mate "/ggo/cmd/channel/call,ii,1,[chId]"
 ```
 ### Enable Alert call
 QLab 5
@@ -57,6 +46,10 @@ grandMA3
 ```
 SendOSC [ID] /ggo/cmd/channel/call,ii,2,[chId]
 ```
+grandMA2 (OSC_Mate)
+```
+Plugin OSC_Mate "/ggo/cmd/channel/call,ii,2,[chId]"
+```
 ### Disable call
 QLab 5
 ```
@@ -65,6 +58,10 @@ QLab 5
 grandMA3
 ```
 SendOSC [ID] /ggo/cmd/channel/call,ii,0,[chId]
+```
+grandMA2 (OSC_Mate)
+```
+Plugin OSC_Mate "/ggo/cmd/channel/call,ii,0,[chId]"
 ```
 ## Cue
 ### Attention
@@ -76,6 +73,10 @@ grandMA3
 ```
 SendOSC [ID] /ggo/cmd/channel/cue,ii,2,[chId]
 ```
+grandMA2 (OSC_Mate)
+```
+Plugin OSC_Mate "/ggo/cmd/channel/cue,ii,2,[chId]"
+```
 ### Ready
 QLab 5
 ```
@@ -83,7 +84,11 @@ QLab 5
 ```
 grandMA3
 ```
-SendOSC [ID] /ggo/cmd/channel/cue,ii,2,[chId]
+SendOSC [ID] /ggo/cmd/channel/cue,ii,3,[chId]
+```
+grandMA2 (OSC_Mate)
+```
+Plugin OSC_Mate "/ggo/cmd/channel/cue,ii,3,[chId]"
 ```
 ### Go
 QLab 5
@@ -94,6 +99,10 @@ grandMA3
 ```
 SendOSC [ID] /ggo/cmd/channel/cue,ii,4,[chId]
 ```
+grandMA2 (OSC_Mate)
+```
+Plugin OSC_Mate "/ggo/cmd/channel/cue,ii,4,[chId]"
+```
 ### Hold
 QLab 5
 ```
@@ -102,6 +111,10 @@ QLab 5
 grandMA3
 ```
 SendOSC [ID] /ggo/cmd/channel/cue,ii,5,[chId]
+```
+grandMA2 (OSC_Mate)
+```
+Plugin OSC_Mate "/ggo/cmd/channel/cue,ii,5,[chId]"
 ```
 ### Disable
 QLab 5
@@ -112,6 +125,10 @@ grandMA3
 ```
 SendOSC [ID] /ggo/cmd/channel/cue,ii,0,[chId]
 ```
+grandMA2 (OSC_Mate)
+```
+Plugin OSC_Mate "/ggo/cmd/channel/cue,ii,0,[chId]"
+```
 ### Disable (direct)
 QLab 5
 ```
@@ -121,13 +138,7 @@ grandMA3
 ```
 SendOSC [ID] /ggo/cmd/channel/cue,ii,1,[chId]
 ```
-
-### 
-QLab 5
+grandMA2 (OSC_Mate)
 ```
-
-```
-grandMA3
-```
-
+Plugin OSC_Mate "/ggo/cmd/channel/cue,ii,1,[chId]"
 ```

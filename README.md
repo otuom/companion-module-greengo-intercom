@@ -4,6 +4,8 @@ See HELP.md and LICENSE
 
 # OSC messages
 ## Documentation
+### Green-GO
+https://manual.greengoconnect.com/en/software/properties/channels/
 ### QLab 5
 https://qlab.app/docs/v5/networking/network-cues/#osc-messages-without-durations
 ### grandMA3
